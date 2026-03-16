@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>MindGuard AI</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+
+body{
+background:#f4f6f9;
+font-family:Arial;
+}
+
+header{
+background:#4facfe;
+color:white;
+padding:30px;
+text-align:center;
+}
+
+.section{
+padding:50px;
+}
+
+.analyzer{
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0px 10px 25px rgba(0,0,0,0.1);
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+  <h1>🧠 MindGuard</h1>
+
+  <p>AI Powered Stress Detection System</p>
+
+</header>
+
+
+<div class="container section">
+
+  <div class="row">
+
+    <div class="col-md-6">
+
+      <h3>About the Creator</h3>
+
+      <p>
+        My name is <b>Abhay Agrahari</b>, a Computer Science student passionate about
+        Artificial Intelligence and technology.
+      </p>
+
+      <p>
+        I created <b>MindGuard</b> as a prototype AI system that can analyze text
+        and detect possible stress levels using Machine Learning and Natural Language Processing.
+      </p>
+      <p>
+        This is currently a basic prototype developed as a learning project to explore how AI can assist in early mental health awareness and provide supportive insights.
+      </p>
+
+      <p>
+        In the future, I plan to expand this project by adding more advanced capabilities such as AI agents, smarter conversation support, improved stress analysis models, and a more interactive user experience.
+      </p>
+
+      <p>
+        My goal is to continue improving MindGuard into a more intelligent and helpful digital system that can support users in understanding and managing their mental well-being.
+      </p>
+
+
+    </div>
+
+
+    <div class="col-md-6">
+
+      <div class="analyzer">
+
+        <h3 class="text-center">Stress Analyzer</h3>
+
+        <form action="/predict" method="post">
+
+          <label class="mb-2"><b>Describe how you are feeling</b></label>
+
+          <textarea class="form-control" name="text" rows="5"
+                    placeholder="Example: I feel overwhelmed with my work and studies"></textarea>
+
+          <button class="btn btn-primary mt-3 w-100">
+
+            Analyze Stress
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<footer>
+
+  <p>Developed by Abhay Agrahari | MindGuard AI Project</p>
+
+</footer>
+
+
+</body>
+
+</html>
